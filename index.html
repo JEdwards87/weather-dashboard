@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <title>Weather Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="container is-fluid">
+    <br>
+    <section>
+      <nav class="panel">
+        <p class="panel-heading has-text-centered">
+          Weather Dashboard
+        </p>
+        <div class="columns m-top">
+          <div class="field has-addons has-addons-centered column">
+            <p class="control">
+              <button class="button buttonSearch">
+                Search
+              </button>
+            </p>
+            <p class="control">
+              <input class="input" id="citySearch" placeholder="Enter a City" type="text" />
+            </p>
+            <p class="control">
+              <button class="button" id="clearBtn">
+                Clear
+              </button>
+            </p>
+          </div>
+          <div class="mk-row column">
+            <div>
+              <h1 id="cityName"></h1>
+              <div id="weatherIconP"></div>
+            </div>
+            <div class="bumper">
+              <p id="temperature"></p>
+              <p id="humidity"></p>
+              <p id="windSpeed"></p>
+              <p id="uvIndex"></p>
+            </div>
+          </div>
+        </div>
+        <p class="panel-tabs">
+          <a class="is-active">Previous Searches</a>
+          <div class="previousSearchList mk-row"></div>
+          <div class="has-text-centered mx-2">
+            <h1 class="card-title">5 Day Forecast:</h1>
+            <br>
+            <div class="columns">
+              <div class="column">
+                <div class="hero has-text-centered" style="color:black;">
+                  <div class="forecastDate1"></div>
+                  <div class="weatherIcon1"></div>
+                  <div class="tempForecast1"></div>
+                  <div class="humidityForecast1"></div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="hero has-text-centered" style="color:black;">
+                  <div class="forecastDate2"></div>
+                  <div class="weatherIcon2"></div>
+                  <div class="tempForecast2"></div>
+                  <div class="humidityForecast2"></div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="hero has-text-centered" style="color:black;">
+                  <div class="forecastDate3"></div>
+                  <div class="weatherIcon3"></div>
+                  <div class="tempForecast3"></div>
+                  <div class="humidityForecast3"></div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="hero has-text-centered" style="color:black;">
+                  <div class="forecastDate4"></div>
+                  <div class="weatherIcon4"></div>
+                  <div class="tempForecast4"></div>
+                  <div class="humidityForecast4"></div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="hero has-text-centered" style="color:black;">
+                  <div class="forecastDate5"></div>
+                  <div class="weatherIcon5"></div>
+                  <div class="tempForecast5"></div>
+                  <div class="humidityForecast5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </p>
+      </nav>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/addPreviousSearch.js" type="text/javascript"></script>
+    <script src="assets/js/renderSearchHistory.js" type="text/javascript"></script>
+    <script src="assets/js/displayWeatherInfo.js" type="text/javascript"></script>
+    <script src="assets/js/displayWeather.js" type="text/javascript"></script>
+    <script src="assets/js/displayWeatherForecast.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

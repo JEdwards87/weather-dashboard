@@ -1,0 +1,47 @@
+.container {
+    margin: 0px;
+}
+.row {
+    margin: 0px;
+}
+.col { 
+    margin: 0px;
+}
+.card {
+    border: none;
+}
+.is-warning {
+    margin-right: 10px;
+}
+.content {
+    margin-top: 50px;
+}
+.field {
+    display: flex;
+    align-items: center;
+}
+.column {
+    align-items: stretch;
+}
+.box {
+    margin: 0px;
+}
+.mk-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bumper {
+    margin-left: 30px;
+}
+.search {
+    align-items: center;
+    color: #363636;
+    display: flex;
+    justify-content: flex-start;
+    padding: .5em .75em;
+}
+.m-top {
+    margin-top: .5em;
+}
+
