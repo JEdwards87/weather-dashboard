@@ -1,5 +1,4 @@
 function displayWeatherForecast(response) {
-    //day 1
     let dateP1 = $("<p>").text(response.data.list[3].dt_txt);
     let weatherIcon1 = response.data.list[3].weather[0].icon;
     let weatherIconImg1 = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png");
